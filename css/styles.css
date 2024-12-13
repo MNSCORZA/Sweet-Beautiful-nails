@@ -1,0 +1,192 @@
+body {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #fbf1e9 25%,
+    #f6e4d3 50%,
+    #f1d7be 75%,
+    #ebcaa8 100%
+  );
+  margin: 0;
+}
+
+.navbar,
+.navbar-expand-lg,
+.navbar-ligth,
+.bg-light {
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+}
+
+.nav-link,
+.nav-item,
+.nav-link active {
+  margin-right: 35px;
+  margin-left: 29px;
+  font-family: "Montserrat Alternates", sans-serif;
+  border-radius: 10%;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social a {
+  margin: 0 10px;
+  color: #333;
+}
+
+
+
+.logo {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 200px;
+  height: 200px;
+
+  border-radius: 2px;
+}
+
+a:hover {
+  background-color: #f1d7be;
+}
+
+.estudio {
+  margin-top: 5%;
+  background-image: url("../images/estudio.jpg");
+  background-size: cover;
+  position: relative;
+  height: 600px;
+  width: auto;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  border: white solid;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.texto-translucido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 170%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5%;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.turnos {
+  margin-left: 30px;
+  padding: 5px;
+  background-color: #ebcaa8;
+  color: #cf010b;
+  font-family: "Montserrat Alternates", sans-serif;
+  border-radius: 10%;
+  text-decoration: none;
+}
+
+.turnos:hover {
+  background-color: #cf010b;
+  color: #ffffff;
+}
+
+.bienvenida {
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-top: 5%;
+}
+
+.tw {
+  width: 20px;
+  margin-right: 4px;
+}
+
+.ms {
+  width: 100px;
+}
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 5px 0;
+  }
+
+  .collapse {
+    display: none;
+  }
+  .navbar-collapse.collapse.show {
+    display: block;
+  }
+  .container-fluid {
+    padding: 2rem;
+  }
+  .bienvenida {
+    font-size: 1.5rem;
+  }
+  .texto-translucido {
+    font-size: 0.7rem;
+    padding: 0.9rem;
+  }
+  .turnos{
+   margin: 1rem;
+   font-size: 0.7rem;
+  }
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+  }
+  .estudio {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.inslink:hover {
+  background-color: #ebcaa8;
+}
+
+.whatsapp-button {
+  position: fixed; /* Fija la posición en la pantalla */
+  bottom: 10px; /* Separa el botón 20px del borde inferior */
+  right: 10px; /* Separa el botón 20px del borde derecho */
+  background-color: #25d366; /* Color de fondo verde de WhatsApp */
+  color: white; /* Color del ícono */
+  border: none; /* Elimina el borde predeterminado del botón */
+  border-radius: 50%; /* Hace que el botón sea circular */
+  width: 50px; /* Ancho del botón */
+  height: 50px; /* Alto del botón */
+  display: flex; /* Utiliza flexbox para centrar el icono */
+  align-items: center; /* Centra verticalmente el icono dentro del botón */
+  justify-content: center; /* Centra horizontalmente el icono dentro del botón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+}
+
+.whatsapp-button:hover {
+  background-color: #1e9e52; /* Cambia el color de fondo cuando el usuario pasa el mouse por encima */
+}
+
+.whatsapp-button img {
+  font-size: 30px;
+  display: flex; /* Enable flexbox for centering */
+  align-items: center; /* Align content vertically */
+  justify-content: center; /* Align content horizontally */
+  padding: 0.3rem; /* Add some padding for spacing */
+  text-decoration: none; /* Remove underline from anchor tag */
+  transition: background-color 0.2s ease; /* Add hover effect (optional) */
+}
